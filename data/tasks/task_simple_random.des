@@ -1,0 +1,30 @@
+MAZE: "mylevel",' '
+INIT_MAP:solidfill,' '
+GEOMETRY:center,center
+MAP
+--------------------
+|................L.|
+|................L.|
+|................L.|
+|................L.|
+|................L.|
+|................L.|
+|................L.|
+|................L.|
+|................L.|
+--------------------
+ENDMAP
+REGION:(0,0,19,10),lit,"ordinary"
+$left_bank = selection:fillrect (1,1,16,9)
+$right_bank = selection:fillrect (18,1,18,9)
+
+BRANCH:(2,2,2,2),(0,0,0,0)
+
+IF [50%] {
+    OBJECT:('/', "death"),rndcoord($left_bank),uncursed
+}
+ELSE {
+    OBJECT:(')', "dagger"),rndcoord($left_bank),uncursed,50,quantity:10
+}
+
+MONSTER: ('H', "minotaur"), rndcoord($right_bank), hostile

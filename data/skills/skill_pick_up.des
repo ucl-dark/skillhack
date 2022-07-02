@@ -1,0 +1,30 @@
+MAZE: "mylevel",' '
+INIT_MAP:solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|...........|
+|...........|
+|...........|
+|...........|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+$all_map = selection:fillrect (1,1,11,5)
+
+REPLACE_TERRAIN:(0,0,12,12), '.', 'L', 3%
+REPLACE_TERRAIN:(0,0,12,12), '.', 'W', 3%
+
+$r = 1d11
+[$r==1]:OBJECT:(')',"silver saber"),rndcoord($all_map),uncursed
+[$r==2]:OBJECT:('[',"leather cloak"),rndcoord($all_map),uncursed
+[$r==3]:OBJECT:('=',"levitation"),rndcoord($all_map),uncursed
+[$r==4]:OBJECT:('(',"skeleton key"),rndcoord($all_map),blessed,0
+[$r==5]:OBJECT:('/',"cold"),rndcoord($all_map),uncursed
+[$r==6]:OBJECT:(')',"dagger"),rndcoord($all_map),uncursed
+[$r==7]:OBJECT:('(',"frost horn"),rndcoord($all_map),uncursed
+[$r==8]:OBJECT:('(',"towel"),rndcoord($all_map),uncursed
+[$r==9]:OBJECT:('[', "green dragon scale mail"),rndcoord($all_map),uncursed
+[$r==10]:OBJECT:('$', "gold piece"),rndcoord($all_map),uncursed
+[$r==11]:OBJECT:('"', "amulet of ESP"),rndcoord($all_map)

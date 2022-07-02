@@ -1,0 +1,20 @@
+MAZE: "mylevel",' '
+INIT_MAP:solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|...........|
+|...........|
+|...........|
+|...........|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+$all_map = selection:fillrect (1,1,11,5)
+
+BRANCH:(2,2,2,2),(0,0,0,0)
+OBJECT:(')', "silver saber"),(2,2),uncursed,50
+
+REPLACE_TERRAIN:(3,3,12,12), '.', 'L', 3%
+REPLACE_TERRAIN:(3,3,12,12), '.', 'W', 3%

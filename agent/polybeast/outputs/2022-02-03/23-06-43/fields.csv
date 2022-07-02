@@ -1,0 +1,2 @@
+_tick,_time,success_rate,step,mean_episode_return,mean_episode_step,total_loss,entropy_loss,pg_loss,baseline_loss,learner_queue_size
+_tick,_time,success_rate,step,mean_episode_return,mean_episode_step,total_loss,entropy_loss,pg_loss,baseline_loss,learner_queue_size,train_seconds

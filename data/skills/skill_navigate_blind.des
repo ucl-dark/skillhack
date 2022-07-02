@@ -1,0 +1,19 @@
+MAZE: "mylevel",' '
+FLAGS:shroud
+INIT_MAP:solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|...........|
+|...........|
+|...........|
+|...........|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+$all_map = selection:fillrect (1,1,11,5)
+
+OBJECT:('!',"blindness"),(2,2),cursed
+BRANCH:(2,2,2,2),(0,0,0,0)
+STAIR:rndcoord(filter('.',$all_map)),down

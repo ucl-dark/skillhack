@@ -1,0 +1,10 @@
+{
+  "mini_simple_seq" : ["mini_skill_pick_up", "mini_skill_wield"],
+  "mini_simple_intersection" : ["mini_skill_pick_up", "mini_skill_wear"],
+  "mini_simple_union" : ["mini_skill_pick_up", "mini_skill_unlock"],
+  "mini_simple_random" : ["mini_skill_pick_up", "mini_skill_zap_death"],
+  "mini_lc_freeze" : ["mini_skill_pick_up", "mini_skill_zap_cold", "mini_skill_apply_frost_horn"],
+  "mini_medusa" : ["mini_skill_pick_up", "mini_skill_put_on"],
+  "mini_mimic" : ["mini_skill_pick_up", "mini_skill_throw", "mini_skill_nav_lava_to_amulet"],
+  "mini_seamonsters" : ["mini_skill_pick_up", "mini_skill_take_off", "mini_skill_wear"]
+}

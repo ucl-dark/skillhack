@@ -1,0 +1,32 @@
+MAZE: "mylevel",' '
+INIT_MAP:solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|...........|
+|...........|
+|...........|
+|...........|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+BRANCH:(2,2,2,2),(0,0,0,0)
+# REPLACE_TERRAIN:(0,0,12,12), '.', 'L', 5%
+# REPLACE_TERRAIN:(0,0,12,12), '.', 'W', 5%
+$all_map = selection:fillrect (1,1,11,5)
+$lava = selection:fillrect (10,1,10,5)
+$right_bank = selection:fillrect (11,1,11,5)
+
+REPLACE_TERRAIN:(3,3,10,6), '.', 'L', 3%
+REPLACE_TERRAIN:(3,3,10,6), '.', 'W', 3%
+
+IF [50%] {
+    OBJECT:(')', "dagger"),(2,2),uncursed,50,quantity:10
+    TERRAIN:$lava, 'L'
+    MONSTER: ('H', "minotaur"), rndcoord($right_bank), asleep
+}
+ELSE {
+    OBJECT:(')', "dagger"),(2,2),uncursed,50,quantity:10
+    MONSTER: ('m', "large mimic"), rndcoord($all_map), hostile
+}

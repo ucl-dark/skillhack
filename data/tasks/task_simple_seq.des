@@ -1,0 +1,19 @@
+MAZE: "mylevel",' '
+INIT_MAP:solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|...........|
+|...........|
+|...........|
+|...........|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+$all_map = selection:fillrect (1,1,11,5)
+
+BRANCH:(2,2,2,2),(0,0,0,0)
+OBJECT:(')', "silver saber"),rndcoord($all_map),uncursed,50
+
+MONSTER: ('q', "wumpus"), (10, 3), hostile, asleep

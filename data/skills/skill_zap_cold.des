@@ -1,0 +1,20 @@
+MAZE: "mylevel", ' '
+FLAGS:hardfloor
+INIT_MAP: solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|.....L.....|
+|.....L.....|
+|.....L.....|
+|.....L.....|
+|.....L.....|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+$left_bank = selection:fillrect (1,1,5,5)
+$right_bank = selection:fillrect (7,1,11,5)
+BRANCH:(2,2,2,2),(0,0,0,0)
+STAIR:rndcoord($right_bank),down
+OBJECT:('/',"cold"),(2,2),blessed
+REPLACE_TERRAIN:(0,0,12,12), '.', '}', 10%

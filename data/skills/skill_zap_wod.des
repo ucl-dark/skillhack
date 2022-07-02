@@ -1,0 +1,25 @@
+MAZE: "mylevel",' '
+INIT_MAP:solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|...........|
+|...........|
+|...........|
+|...........|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+BRANCH:(2,2,2,2),(0,0,0,0)
+# REPLACE_TERRAIN:(0,0,12,12), '.', 'L', 5%
+# REPLACE_TERRAIN:(0,0,12,12), '.', 'W', 5%
+$all_map = selection:fillrect (1,1,11,5)
+$lava = selection:fillrect (10,1,10,5)
+$right_bank = selection:fillrect (11,1,11,5)
+OBJECT:('/', "death"),(2,2),uncursed
+REPLACE_TERRAIN:(3,3,12,12), '.', 'L', 3%
+REPLACE_TERRAIN:(3,3,12,12), '.', 'W', 3%
+TERRAIN:$lava, 'L'
+MONSTER: ('H', "minotaur"), rndcoord($right_bank), asleep
+

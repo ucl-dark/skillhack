@@ -1,0 +1,25 @@
+MAZE: "mylevel",' '
+INIT_MAP:solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------------
+|.........|..FF.FF|
+|.........|..FFFFF|
+|.........|..FFFFF|
+|.........+.......|
+|.........|.......|
+-------------------
+ENDMAP
+REGION:(0,0,40,5),lit,"ordinary"
+BRANCH:(1,1,4,4),(0,0,0,0)
+$room_a = selection:fillrect (1,1,9,5)
+$room_b = selection:fillrect (11,1,17,5)
+DOOR:closed,(10,4)
+
+# Room A
+OBJECT:('(', "towel"),rndcoord($room_a),uncursed
+
+# Room B
+MONSTER: ('@', "medusa"), (15,1), hostile
+STAIR:rndcoord(filter('.', $room_b)),down
+# STAIR:(15,4),down

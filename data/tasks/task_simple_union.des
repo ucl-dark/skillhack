@@ -1,0 +1,21 @@
+MAZE: "mylevel",' '
+INIT_MAP:solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|.........|.|
+|.........L.|
+|.........L.|
+|.........L.|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+$main_section = selection:fillrect (1,1,9,5)
+
+BRANCH:(2,2,2,2),(0,0,0,0)
+OBJECT:('(',"skeleton key"),rndcoord($main_section),blessed,0
+
+DOOR:locked,(10,1)
+
+STAIR:(11, 5),down

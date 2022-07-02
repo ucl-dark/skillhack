@@ -1,0 +1,16 @@
+MAZE: "mylevel",' '
+INIT_MAP:solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|...........|
+|...........|
+|...........|
+|...........|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+$all_map = selection:fillrect (1,1,11,5)
+
+MONSTER: ('q', "wumpus"), rndcoord($all_map), hostile, asleep

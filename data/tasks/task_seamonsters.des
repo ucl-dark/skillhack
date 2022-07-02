@@ -1,0 +1,24 @@
+MAZE: "mylevel",' '
+INIT_MAP:solidfill,' '
+GEOMETRY:center,center
+MAP
+-----------------------
+|.......}}}}}}}}......|
+|.......}}}}}}}}......|
+|.......}}}}}}}}......|
+|.......}}}}}}}}......|
+|.......}}}}}}}}......|
+-----------------------
+ENDMAP
+REGION:(0,0,22,6),lit,"ordinary"
+$left_bank = selection:fillrect (1,1,3,5)
+$water = selection:fillrect (8,1,13,5)
+$right_bank = selection:fillrect (16,1,21,5)
+BRANCH:(1,1,6,5),(0,0,0,0)
+STAIR:rndcoord($right_bank),down
+TERRAIN: randline (7, 4), (16, 4), 3, '.'
+TERRAIN: randline (7, 4), (16, 4), 3, '.'
+OBJECT:('[', "green dragon scale mail"),rndcoord($left_bank),blessed,30
+LOOP [4] {
+    MONSTER: (';', "piranha"), rndcoord(filter('W', $water)), hostile
+}

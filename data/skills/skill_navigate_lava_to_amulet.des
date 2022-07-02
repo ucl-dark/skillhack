@@ -1,0 +1,23 @@
+MAZE: "mylevel",' '
+INIT_MAP:solidfill,' '
+GEOMETRY:center,center
+MAP
+----------------------
+|...........LLLLLLLLL|
+|...........LLLLLLLLL|
+|...........LLLLLLLLL|
+|...........LLLLLLL..|
+|...........LLLLLLL..|
+----------------------
+ENDMAP
+REGION:(0,0,21,6),lit,"ordinary"
+$all_map = selection:fillrect (1,1,11,5)
+
+BRANCH:(2,2,2,2),(0,0,0,0)
+
+OBJECT:('"', "amulet of ESP"), (20,5), uncursed
+REPLACE_TERRAIN:(0,0,12,12), '.', 'L', 3%
+REPLACE_TERRAIN:(0,0,12,12), '.', '}', 3%
+TERRAIN: randline (12, 1), (20, 5), 3, '.'
+TERRAIN: randline (12, 1), (20, 5), 3, '.'
+TERRAIN: randline (12, 1), (20, 5), 3, '.'

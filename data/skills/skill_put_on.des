@@ -1,0 +1,25 @@
+MAZE: "mylevel",' '
+INIT_MAP:solidfill,' '
+GEOMETRY:center,center
+MAP
+-------------
+|...........|
+|...........|
+|...........|
+|...........|
+|...........|
+-------------
+ENDMAP
+REGION:(0,0,12,6),lit,"ordinary"
+$all_map = selection:fillrect (1,1,11,5)
+BRANCH:(2,2,2,2),(0,0,0,0)
+
+REPLACE_TERRAIN:(0,0,12,12), '.', 'L', 5%
+REPLACE_TERRAIN:(0,0,12,12), '.', 'W', 5%
+
+IF [50%] {
+    OBJECT:('(', "towel"),(2,2),uncursed
+}
+ELSE {
+    OBJECT:('=',"levitation"),(2,2),blessed
+}

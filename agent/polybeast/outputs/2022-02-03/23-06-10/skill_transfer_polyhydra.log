@@ -1,0 +1,104 @@
+[2022-02-03 23:06:10,336][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: nethack
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 1000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: -0.01
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: mini_skill_apply_frost_horn
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 1
+total_steps: 1000.0
+batch_size: 1
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cpu
+actor_device: cpu
+max_learner_queue_size: null
+model: baseline
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2022-02-03 23:06:23,141][root][INFO] - Symlinked log directory: /home/mikey/skill_transfer/skilful/agent/polybeast/latest
+[2022-02-03 23:06:23,156][root][INFO] - Logging results to /home/mikey/skill_transfer/skilful/agent/polybeast/outputs/2022-02-03/23-06-10
+[2022-02-03 23:06:23,189][palaas/out][INFO] - Found log directory: /home/mikey/skill_transfer/skilful/agent/polybeast/outputs/2022-02-03/23-06-10
+[2022-02-03 23:06:23,190][palaas/out][INFO] - Saving arguments to /home/mikey/skill_transfer/skilful/agent/polybeast/outputs/2022-02-03/23-06-10/meta.json
+[2022-02-03 23:06:23,200][palaas/out][INFO] - Saving messages to /home/mikey/skill_transfer/skilful/agent/polybeast/outputs/2022-02-03/23-06-10/out.log
+[2022-02-03 23:06:23,201][palaas/out][INFO] - Saving logs data to /home/mikey/skill_transfer/skilful/agent/polybeast/outputs/2022-02-03/23-06-10/logs.csv
+[2022-02-03 23:06:23,201][palaas/out][INFO] - Saving logs' fields to /home/mikey/skill_transfer/skilful/agent/polybeast/outputs/2022-02-03/23-06-10/fields.csv
+[2022-02-03 23:06:23,234][root][INFO] - Using CUDA.
+[2022-02-03 23:06:23,235][root][INFO] - Using model baseline
+[2022-02-03 23:06:23,236][nle.env.base][INFO] - Not saving any NLE data.
+[2022-02-03 23:06:23,270][root][INFO] - Creating archive directory: /home/mikey/skill_transfer/skilful/agent/polybeast/outputs/2022-02-03/23-06-10/archives
+[2022-02-03 23:06:23,323][root][INFO] - Number of model parameters: 3721744
+[2022-02-03 23:06:23,324][nle.env.base][INFO] - Not saving any NLE data.
+[2022-02-03 23:06:24,384][nle.env.base][INFO] - Not saving any NLE data.
+[2022-02-03 23:06:26,742][palaas/out][INFO] - Updated log fields: ['_tick', '_time', 'success_rate', 'step', 'mean_episode_return', 'mean_episode_step', 'total_loss', 'entropy_loss', 'pg_loss', 'baseline_loss', 'learner_queue_size']
+[2022-02-03 23:06:28,384][root][INFO] - Saving checkpoint to /home/mikey/skill_transfer/skilful/agent/polybeast/outputs/2022-02-03/23-06-10/mini_skill_apply_frost_horn_0.tar
+[2022-02-03 23:06:28,471][root][INFO] - Step 480 @ 96.0 SPS. Inference batcher size: 0. Learner queue size: 0. Other stats: (success_rate = None, step = 480, mean_episode_return = None, mean_episode_step = 190.5, total_loss = 3.584e+04, entropy_loss = -0.00098929, pg_loss = -4.6139, baseline_loss = 3.5844e+04, learner_queue_size = 0, _tick = 0, _time = 1.6439e+09, train_seconds = 5.0)
+[2022-02-03 23:06:29,088][palaas/out][INFO] - Updated log fields: ['_tick', '_time', 'success_rate', 'step', 'mean_episode_return', 'mean_episode_step', 'total_loss', 'entropy_loss', 'pg_loss', 'baseline_loss', 'learner_queue_size', 'train_seconds']
+[2022-02-03 23:06:29,904][root][INFO] - Saving checkpoint to /home/mikey/skill_transfer/skilful/agent/polybeast/outputs/2022-02-03/23-06-10/mini_skill_apply_frost_horn.tar
+[2022-02-03 23:06:29,952][root][ERROR] - Exception in actorpool thread!
