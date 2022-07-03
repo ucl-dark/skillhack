@@ -1,6 +1,10 @@
-<h1> Skilful </h1>
+<h1> SkillHack </h1>
 
-A repository for skill based learning.  This repository is dependent on the MiniHack repo (https://github.com/facebookresearch/minihack).
+SkillHack is a repository for skill based learning based on MiniHack and the NetHack Learning Environment (NLE).  SkillHack consists of 16 simple skill acquistion environments and 8 complex task environments.  The task environments are difficult to solve due to the large state-action space and sparsity of rewards, but can be made tractable by transferring knowledge gained from the simpler skill acquistion environments.
+
+
+<h1> Installation </h1>
+This repository is dependent on the MiniHack repo (https://github.com/facebookresearch/minihack).
 
 
 <h1>How to run a Skill Transfer experiment</h1>
