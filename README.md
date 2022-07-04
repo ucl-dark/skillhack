@@ -1,6 +1,10 @@
-<h1> Skilful </h1>
+<h1> SkillHack </h1>
 
-A repository for skill based learning.  This repository is dependent on the MiniHack repo (https://github.com/facebookresearch/minihack).
+SkillHack is a repository for skill based learning based on MiniHack and the NetHack Learning Environment (NLE).  SkillHack consists of 16 simple skill acquistion environments and 8 complex task environments.  The task environments are difficult to solve due to the large state-action space and sparsity of rewards, but can be made tractable by transferring knowledge gained from the simpler skill acquistion environments.
+
+
+<h1> Installation </h1>
+This repository is dependent on the MiniHack repo (https://github.com/facebookresearch/minihack).
 
 
 <h1>How to run a Skill Transfer experiment</h1>
@@ -91,7 +95,7 @@ With all other parameters being able to be set in the same way as with polyhydra
 The runs from the paper can be repeated with the following command.  If you don't want to run with wandb, set wandb=false.
 
 ```
-python -m agent.polybeast.skill_transfer_polyhydra --multirun model=ks,foc,hks,baseline env=mini_simple_seq,mini_simple_intersection,mini_simple_union,mini_simple_random,mini_lc_freeze,mini_medusa,mini_mimic,mini_seamonsters name=1,2,3,4,5,6,7,8,9,10,11,12 total_steps=2.5e8 group=<YOUR_WANDB_GROUP> hks_max_uniform_weight=20 hks_min_uniform_prop=0 train_with_all_skills=true ks_min_lambda_prop=0.05 hks_max_uniform_time=2e7 entity=<YOUR_WANDB_ENTITY> project=<YOUR_WANDB_PROJECT>
+python -m agent.polybeast.skill_transfer_polyhydra --multirun model=ks,foc,hks,baseline env=mini_simple_seq,mini_simple_intersection,mini_simple_union,mini_simple_random,mini_lc_freeze,mini_medusa,mini_mimic,mini_seamonsters name=1,2,3,4,5,6,7,8,9,10,11,12 total_steps=2.5e8 group=<YOUR_WANDB_GROUP> hks_max_uniform_weight=20 hks_min_uniform_prop=0 train_with_all_skills=false ks_min_lambda_prop=0.05 hks_max_uniform_time=2e7 entity=<YOUR_WANDB_ENTITY> project=<YOUR_WANDB_PROJECT>
 ```
 
 
