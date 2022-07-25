@@ -35,9 +35,9 @@ hydra:
 name: null  # can use this to have multiple runs with same params, eg name=1,2,3,4,5
 
 ## WandB settings
-wandb: true  # enable wandb logging
+wandb: false  # enable wandb logging
 project: skillhack  # specifies the project name to log to
-entity: skillhack  # the team to log to
+entity: your_entity_name  # the team to log to
 group: default  # defines a group name for the experiment
 
 # Skill transfer settings
