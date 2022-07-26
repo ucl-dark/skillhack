@@ -1,5 +1,7 @@
 <h1> SkillHack </h1>
 
+Source code of [Hierarchical Kickstarting for Skill Transfer in Reinforcement Learning](https://arxiv.org/abs/2110.02439) (CoLLAs 2022).
+
 ![alt text](https://github.com/ucl-dark/skillhack/blob/main/docs/skills_15.png?raw=true)
 
 SkillHack is a repository for skill based learning based on MiniHack and the NetHack Learning Environment (NLE).  SkillHack consists of 16 simple skill acquistion environments and 8 complex task environments.  The task environments are difficult to solve due to the large state-action space and sparsity of rewards, but can be made tractable by transferring knowledge gained from the simpler skill acquistion environments.
