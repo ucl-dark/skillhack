@@ -1,4 +1,0 @@
-Saving logs data to /home/mikey/skill_transfer/skilful/agent/polybeast/outputs/2022-02-03/23-06-43/logs.csv
-Saving logs' fields to /home/mikey/skill_transfer/skilful/agent/polybeast/outputs/2022-02-03/23-06-43/fields.csv
-Updated log fields: ['_tick', '_time', 'success_rate', 'step', 'mean_episode_return', 'mean_episode_step', 'total_loss', 'entropy_loss', 'pg_loss', 'baseline_loss', 'learner_queue_size']
-Updated log fields: ['_tick', '_time', 'success_rate', 'step', 'mean_episode_return', 'mean_episode_step', 'total_loss', 'entropy_loss', 'pg_loss', 'baseline_loss', 'learner_queue_size', 'train_seconds']

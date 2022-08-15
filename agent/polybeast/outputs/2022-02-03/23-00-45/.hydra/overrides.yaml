@@ -1,8 +1,0 @@
-- env=mini_skill_apply_frost_horn
-- use_lstm=false
-- wandb=false
-- total_steps=1e3
-- num_actors=1
-- batch_size=1
-- learner_device=cpu
-- actor_device=cpu
