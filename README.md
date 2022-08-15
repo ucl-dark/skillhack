@@ -1,6 +1,6 @@
 <h1> SkillHack </h1>
 
-Source code of [Hierarchical Kickstarting for Skill Transfer in Reinforcement Learning](https://arxiv.org/abs/2110.02439) (CoLLAs 2022).
+Source code for [Hierarchical Kickstarting for Skill Transfer in Reinforcement Learning](https://arxiv.org/abs/2207.11584) (CoLLAs 2022).
 
 ![alt text](https://github.com/ucl-dark/skillhack/blob/main/docs/skills_15.png?raw=true)
 
