@@ -115,7 +115,7 @@ If you make use of this code in your own work, please cite our paper:
 ```
 @misc{matthews2022hierarchical,
   url = {https://arxiv.org/abs/2207.11584},
-  author = {Matthews, Michael and Samvelyan, Mikayel and Parker-Holder, Jack and Grefenstette, Edward and Rocktäschel, Tim},
+  author = {Matthews, Michael and Samvelyan, Mikayel and Parker-Holder, Jack and Grefenstette, Edward and Rockt{\"a}schel, Tim},
   title = {Hierarchical Kickstarting for Skill Transfer in Reinforcement Learning},
   publisher = {arXiv},
   year = {2022},
